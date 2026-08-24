@@ -1,0 +1,157 @@
+/* CSS Variables - High Contrast Readable Theme */
+/* Light Mode (Default) */
+:root,
+[data-theme="light"] {
+  /* Background Colors - Light */
+  --bg: #FEF7DC;
+  --bg-alt: #F5EFE0;
+  --bg-card: #FFFFFF;
+
+  /* Text Colors - DARK for light backgrounds */
+  --text: #2D2520;
+  --text-heading: #1A1410;
+  --text-body: #2D2520;
+  --text-muted: #5A4D42;
+  --text-dark: #1A1410;
+
+  /* Accent Colors - Dark enough for contrast */
+  --accent: #5A4830;
+  --accent-primary: #5A4830;
+  --accent-secondary: #6B5540;
+  --white: #FFFFFF;
+
+  /* Button Colors */
+  --btn-primary-bg: #5A4830;
+  --btn-primary-hover: #3D2F20;
+  --btn-primary-text: #FFFFFF;
+
+  /* Your Brand Colors */
+  --color-cream: #FEF7DC;
+  --color-beige: #E6DDC6;
+  --color-tan: #C2B8A3;
+  --color-brown: #A19882;
+
+  /* Borders */
+  --border: #C2B8A3;
+  --border-light: #E6DDC6;
+
+  /* Shadows */
+  --shadow-sm: 0 2px 8px rgba(45, 37, 32, 0.1);
+  --shadow: 0 4px 16px rgba(45, 37, 32, 0.12);
+  --shadow-lg: 0 8px 24px rgba(45, 37, 32, 0.15);
+  --shadow-hover: 0 8px 24px rgba(90, 72, 48, 0.2);
+
+  /* Navbar */
+  --navbar-bg: rgba(254, 247, 220, 0.98);
+  --navbar-border: #E6DDC6;
+
+  /* Footer */
+  --footer-bg: #5A4830;
+  --footer-text: #FFFFFF;
+  --footer-muted: #E6DDC6;
+
+  /* Typography Scale */
+  --font-xs: 0.75rem;
+  --font-sm: 0.875rem;
+  --font-base: 1rem;
+  --font-lg: 1.125rem;
+  --font-xl: 1.25rem;
+  --font-2xl: 1.5rem;
+  --font-3xl: 2rem;
+  --font-4xl: 2.5rem;
+  --font-5xl: 3rem;
+
+  /* Spacing Scale */
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 3rem;
+  --space-3xl: 4rem;
+  --space-4xl: 6rem;
+
+  /* Border Radius */
+  --radius-sm: 4px;
+  --radius: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --radius-full: 9999px;
+
+  /* Transitions */
+  --transition-fast: 150ms ease;
+  --transition: 200ms ease;
+  --transition-slow: 300ms ease;
+
+  /* Layout */
+  --max-width: 1200px;
+  --navbar-height: 70px;
+
+  /* Font Family */
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-heading: 'Poppins', system-ui, -apple-system, sans-serif;
+}
+
+/* Dark Mode Variables */
+[data-theme="dark"] {
+  /* Background Colors - Dark but not too dark */
+  --bg: #1F1A17;
+  --bg-alt: #2D2822;
+  --bg-card: #2A2520;
+
+  /* Text Colors - HIGH CONTRAST white/cream for dark backgrounds */
+  --text: #F5F0E8;
+  --text-heading: #FFFFFF;
+  --text-body: #F5F0E8;
+  --text-muted: #D4C8B0;
+  --text-dark: #FFFFFF;
+
+  /* Accent Colors - Bright cream for visibility */
+  --accent: #F5F0E8;
+  --accent-primary: #F5F0E8;
+  --accent-secondary: #E6DDC6;
+  --white: #1A1410;
+
+  /* Button Colors */
+  --btn-primary-bg: #F5F0E8;
+  --btn-primary-hover: #FFFFFF;
+  --btn-primary-text: #1A1410;
+
+  /* Your Brand Colors - adjusted for dark mode */
+  --color-cream: #2D2822;
+  --color-beige: #3D3630;
+  --color-tan: #C2B8A3;
+  --color-brown: #A19882;
+
+  /* Borders - more visible */
+  --border: #6B5540;
+  --border-light: #4D4035;
+
+  /* Shadows */
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
+  --shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.5);
+  --shadow-hover: 0 8px 24px rgba(245, 240, 232, 0.2);
+
+  /* Navbar */
+  --navbar-bg: rgba(31, 26, 23, 0.98);
+  --navbar-border: #4D4035;
+
+  /* Footer */
+  --footer-bg: #141210;
+  --footer-text: #FFFFFF;
+  --footer-muted: #D4C8B0;
+}
+
+/* Smooth transition for theme changes */
+* {
+  transition: background-color var(--transition),
+              border-color var(--transition),
+              color var(--transition),
+              box-shadow var(--transition);
+}
+
+img,
+.svg-icon {
+  transition: none;
+}
