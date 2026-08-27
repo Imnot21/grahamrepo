@@ -21,7 +21,7 @@ function Products() {
             <article key={product.id} className={styles.card}>
               <div className={styles.imageContainer}>
                 <img
-                  src={`https://images.unsplash.com/photo-1558961363-fa8fdf82db35?w=400&h=300&fit=crop`}
+                  src={product.image}
                   alt={product.name}
                   className={styles.image}
                   loading="lazy"
