@@ -5,7 +5,7 @@ export const products = [
     description: "Our signature graham balls made with premium crushed graham crackers and sweetened condensed milk, rolled in more graham crumbs.",
     price: 25,
     unit: "pack of 12",
-    image: "/images/classic-graham-balls.jpg",
+    image: "/grahamrepo/images/classic-graham-balls.png",
     badge: "Best Seller",
     features: ["Premium ingredients", "Fresh daily", "Perfect sweetness"]
   },
@@ -15,7 +15,7 @@ export const products = [
     description: "Classic graham balls dipped in rich chocolate coating. A perfect blend of creamy and crunchy textures.",
     price: 35,
     unit: "pack of 12",
-    image: "/images/chocolate-graham-balls.jpg",
+    image: "/grahamrepo/images/chocolate-graham-balls.png",
     badge: "Popular",
     features: ["Belgian chocolate", "Double-coated", "Gift-ready"]
   },
@@ -25,7 +25,7 @@ export const products = [
     description: "Colorful and fun graham balls rolled in rainbow sprinkles. Perfect for parties and celebrations.",
     price: 30,
     unit: "pack of 12",
-    image: "/images/sprinkles-graham-balls.jpg",
+    image: "/grahamrepo/images/sprinkles-graham-balls.png",
     badge: null,
     features: ["Colorful design", "Party favorite", "Kid-approved"]
   },
@@ -35,7 +35,7 @@ export const products = [
     description: "A deluxe assortment featuring classic, chocolate, and special flavors in one beautiful package.",
     price: 45,
     unit: "pack of 18",
-    image: "/images/assorted-graham-balls.jpg",
+    image: "/grahamrepo/images/classic-graham-balls.png",
     badge: "Premium",
     features: ["Multiple flavors", "Gift packaging", "Great value"]
   },
@@ -45,7 +45,7 @@ export const products = [
     description: "Large pack perfect for parties and events. Comes in a keepsake box with serving suggestions.",
     price: 75,
     unit: "pack of 36",
-    image: "/images/party-pack.jpg",
+    image: "/grahamrepo/images/sprinkles-graham-balls.png",
     badge: "Party Size",
     features: ["Bulk savings", "Party-ready", "Keepsake box"]
   },
@@ -55,7 +55,7 @@ export const products = [
     description: "For resellers and businesses. Contact us for custom pricing and packaging options.",
     price: 0,
     unit: "custom orders",
-    image: "/images/wholesale.jpg",
+    image: "/grahamrepo/images/chocolate-graham-balls.png",
     badge: "Wholesale",
     features: ["Custom quantities", "Special pricing", "Business partnership"]
   }
