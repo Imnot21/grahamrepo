@@ -1,17 +1,55 @@
+import { useState, useEffect } from 'react';
 import { companyInfo } from '../../data/products';
 import styles from './About.module.css';
 
+const carouselImages = [
+  { src: '/grahamrepo/images/classic-graham-balls.png', alt: 'Classic Graham Balls' },
+  { src: '/grahamrepo/images/chocolate-graham-balls.png', alt: 'Chocolate Coated Graham Balls' },
+  { src: '/grahamrepo/images/sprinkles-graham-balls.png', alt: 'Sprinkles Graham Balls' },
+];
+
 function About() {
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [isFading, setIsFading] = useState(false);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIsFading(true);
+      setTimeout(() => {
+        setCurrentIndex((prev) => (prev + 1) % carouselImages.length);
+        setIsFading(false);
+      }, 400);
+    }, 3000);
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <section id="about" className={styles.about}>
       <div className={styles.container}>
         <div className={styles.imageSection}>
           <div className={styles.imageWrapper}>
             <img
-              src="https://images.unsplash.com/photo-1556217477-d425ace308d0?w=600&h=700&fit=crop"
-              alt="Our team crafting delicious graham balls"
-              className={styles.image}
+              src={carouselImages[currentIndex].src}
+              alt={carouselImages[currentIndex].alt}
+              className={`${styles.image} ${isFading ? styles.fading : ''}`}
             />
+            <div className={styles.indicators}>
+              {carouselImages.map((_, index) => (
+                <button
+                  key={index}
+                  className={`${styles.dot} ${index === currentIndex ? styles.activeDot : ''}`}
+                  onClick={() => {
+                    setIsFading(true);
+                    setTimeout(() => {
+                      setCurrentIndex(index);
+                      setIsFading(false);
+                    }, 400);
+                  }}
+                  aria-label={`Go to image ${index + 1}`}
+                />
+              ))}
+            </div>
             <div className={styles.experience}>
               <span className={styles.experienceNumber}>8+</span>
               <span className={styles.experienceText}>Years of Excellence</span>
