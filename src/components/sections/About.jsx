@@ -15,6 +15,7 @@ function About() {
   useEffect(() => {
     const interval = setInterval(() => {
       setIsFading(true);
+      
       setTimeout(() => {
         setCurrentIndex((prev) => (prev + 1) % carouselImages.length);
         setIsFading(false);
@@ -58,8 +59,8 @@ function About() {
         </div>
 
         <div className={styles.content}>
-          <span className={styles.badge}>About Us</span>
-          <h2 className={styles.title}>Crafting Sweet Moments Since 2018</h2>
+          <span className="eyebrow">Our story</span>
+          <h2 className={styles.title}>Sweet moments, crafted since 2018</h2>
           <p className={styles.description}>
             {companyInfo.description}
           </p>

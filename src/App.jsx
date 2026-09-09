@@ -2,23 +2,26 @@ import Navbar from './components/layout/Navbar'
 import Hero from './components/sections/Hero'
 import Products from './components/sections/Products'
 import About from './components/sections/About'
+import Testimonials from './components/sections/Testimonials'
 import Contact from './components/sections/Contact'
 import Footer from './components/layout/Footer'
-import './styles/variables.css'
-import './styles/global.css'
 
 function App() {
   return (
-    <>
+    <div className="grain">
+      <a href="#home" className="skip-link">
+        Skip to content
+      </a>
       <Navbar />
       <main>
         <Hero />
         <Products />
         <About />
+        <Testimonials />
         <Contact />
       </main>
       <Footer />
-    </>
+    </div>
   )
 }
 

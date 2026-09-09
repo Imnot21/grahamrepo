@@ -8,11 +8,11 @@ function Products() {
     <section id="products" className={styles.products}>
       <div className={styles.container}>
         <div className={styles.header}>
-          <span className={styles.badge}>Our Products</span>
-          <h2 className={styles.title}>Delicious Selection of Graham Balls</h2>
+          <span className="eyebrow">Our products</span>
+          <h2 className={styles.title}>Six ways to make the day sweeter</h2>
           <p className={styles.subtitle}>
-            Handcrafted with love using premium ingredients. Choose from our variety of flavors
-            and packaging options perfect for any occasion.
+            Handcrafted with premium ingredients and rolled fresh to order. Pick a flavor, or
+            talk to us about custom and wholesale packs for your occasion.
           </p>
         </div>
 
@@ -27,7 +27,13 @@ function Products() {
                   loading="lazy"
                 />
                 {product.badge && (
-                  <span className={styles.productBadge}>{product.badge}</span>
+                  <span
+                    className={`${styles.productBadge} ${
+                      product.badge.toLowerCase().includes('wholesale') ? styles.wholesale : ''
+                    }`}
+                  >
+                    {product.badge}
+                  </span>
                 )}
               </div>
 
@@ -71,7 +77,7 @@ function Products() {
                   ) : (
                     <a
                       href="#contact"
-                      className={styles.orderButton}
+                      className={`${styles.orderButton} ${styles.ghost}`}
                     >
                       Get Quote
                     </a>

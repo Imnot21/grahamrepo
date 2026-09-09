@@ -1,56 +1,68 @@
-/* CSS Variables - High Contrast Readable Theme */
-/* Light Mode (Default) */
+/* ============================================================
+   Graham Balls Delights — Design Tokens
+   Warm, artisanal, editorial. Single caramel accent.
+   ============================================================ */
+
 :root,
 [data-theme="light"] {
-  /* Background Colors - Light */
-  --bg: #FEF7DC;
-  --bg-alt: #F5EFE0;
-  --bg-card: #FFFFFF;
+  /* Surfaces — warm cream family (tinted warm, never pure gray) */
+  --bg: #FAF3E5;
+  --bg-alt: #F3E9D5;
+  --bg-card: #FFFBF1;
+  --surface-muted: #F1E7D3;
 
-  /* Text Colors - DARK for light backgrounds */
-  --text: #2D2520;
-  --text-heading: #1A1410;
-  --text-body: #2D2520;
-  --text-muted: #5A4D42;
-  --text-dark: #1A1410;
+  /* Text — deep espresso brown */
+  --text: #33271A;
+  --text-heading: #241A0F;
+  --text-body: #4A3C2A;
+  --text-muted: #8A7A62;
 
-  /* Accent Colors - Dark enough for contrast */
-  --accent: #5A4830;
-  --accent-primary: #5A4830;
-  --accent-secondary: #6B5540;
+  /* Accent — spiced caramel (single accent, desaturated) */
+  --accent: #A8612B;
+  --accent-strong: #8C4E1F;
+  --accent-soft: rgba(168, 97, 43, 0.10);
+  --accent-ink: #7C451C;
+
+  /* Base neutrals */
   --white: #FFFFFF;
+  --ink: #1E160C;
 
-  /* Button Colors */
-  --btn-primary-bg: #5A4830;
-  --btn-primary-hover: #3D2F20;
-  --btn-primary-text: #FFFFFF;
+  /* Button */
+  --btn-primary-bg: #A8612B;
+  --btn-primary-hover: #8C4E1F;
+  --btn-primary-text: #FFF8EC;
 
-  /* Your Brand Colors */
-  --color-cream: #FEF7DC;
-  --color-beige: #E6DDC6;
-  --color-tan: #C2B8A3;
-  --color-brown: #A19882;
+  /* Brand tone ramps (all warm) */
+  --color-cream: #F3E9D5;
+  --color-beige: #E8DCC2;
+  --color-tan: #CBB98F;
+  --color-brown: #A3946F;
 
-  /* Borders */
-  --border: #C2B8A3;
-  --border-light: #E6DDC6;
+  /* Lines / borders */
+  --border: #DED2B8;
+  --border-light: #ECE2CB;
+  --border-strong: #C3B48B;
 
-  /* Shadows */
-  --shadow-sm: 0 2px 8px rgba(45, 37, 32, 0.1);
-  --shadow: 0 4px 16px rgba(45, 37, 32, 0.12);
-  --shadow-lg: 0 8px 24px rgba(45, 37, 32, 0.15);
-  --shadow-hover: 0 8px 24px rgba(90, 72, 48, 0.2);
+  /* Shadows — tinted warm, single light source from top-left */
+  --shadow-sm: 0 1px 2px rgba(90, 62, 26, 0.07), 0 2px 8px rgba(90, 62, 26, 0.06);
+  --shadow: 0 2px 6px rgba(90, 62, 26, 0.08), 0 12px 28px rgba(90, 62, 26, 0.10);
+  --shadow-lg: 0 8px 20px rgba(90, 62, 26, 0.10), 0 24px 48px rgba(90, 62, 26, 0.14);
+  --shadow-hover: 0 10px 24px rgba(140, 78, 31, 0.16), 0 28px 56px rgba(140, 78, 31, 0.12);
 
   /* Navbar */
-  --navbar-bg: rgba(254, 247, 220, 0.98);
-  --navbar-border: #E6DDC6;
+  --navbar-bg: rgba(250, 243, 229, 0.82);
+  --navbar-border: rgba(222, 210, 184, 0.6);
 
   /* Footer */
-  --footer-bg: #5A4830;
-  --footer-text: #FFFFFF;
-  --footer-muted: #E6DDC6;
+  --footer-bg: #241A0F;
+  --footer-text: #F3E9D5;
+  --footer-muted: #B8A98C;
 
-  /* Typography Scale */
+  /* Typography */
+  --font-sans: 'Outfit', system-ui, -apple-system, sans-serif;
+  --font-display: 'Fraunces', Georgia, 'Times New Roman', serif;
+
+  /* Type scale */
   --font-xs: 0.75rem;
   --font-sm: 0.875rem;
   --font-base: 1rem;
@@ -60,8 +72,10 @@
   --font-3xl: 2rem;
   --font-4xl: 2.5rem;
   --font-5xl: 3rem;
+  --font-6xl: 4rem;
+  --font-7xl: 5rem;
 
-  /* Spacing Scale */
+  /* Spacing */
   --space-xs: 0.25rem;
   --space-sm: 0.5rem;
   --space-md: 1rem;
@@ -71,80 +85,92 @@
   --space-3xl: 4rem;
   --space-4xl: 6rem;
 
-  /* Border Radius */
-  --radius-sm: 4px;
-  --radius: 8px;
-  --radius-lg: 12px;
-  --radius-xl: 16px;
+  /* Radius — varying: tight on inner, soft on containers */
+  --radius-sm: 6px;
+  --radius: 12px;
+  --radius-lg: 18px;
+  --radius-xl: 26px;
   --radius-full: 9999px;
 
-  /* Transitions */
-  --transition-fast: 150ms ease;
-  --transition: 200ms ease;
-  --transition-slow: 300ms ease;
+  /* Motion */
+  --transition-fast: 120ms cubic-bezier(0.2, 0.6, 0.2, 1);
+  --transition: 240ms cubic-bezier(0.2, 0.6, 0.2, 1);
+  --transition-slow: 420ms cubic-bezier(0.16, 0.6, 0.2, 1);
 
   /* Layout */
-  --max-width: 1200px;
-  --navbar-height: 70px;
+  --max-width: 1180px;
+  --navbar-height: 74px;
+  --gutter: clamp(1.25rem, 5vw, 2.5rem);
 
-  /* Font Family */
-  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
-  --font-heading: 'Poppins', system-ui, -apple-system, sans-serif;
+  /* z-index scale (avoid magic 9999) */
+  --z-nav: 1000;
+  --z-overlay: 1100;
+  --z-grain: 2000;
 }
 
-/* Dark Mode Variables */
+/* ============ Dark Mode ============ */
 [data-theme="dark"] {
-  /* Background Colors - Dark but not too dark */
-  --bg: #1F1A17;
-  --bg-alt: #2D2822;
-  --bg-card: #2A2520;
+  /* Surfaces — deep warm charcoal (off-black, tinted warm) */
+  --bg: #191410;
+  --bg-alt: #211B14;
+  --bg-card: #211B14;
+  --surface-muted: #2A2218;
 
-  /* Text Colors - HIGH CONTRAST white/cream for dark backgrounds */
-  --text: #F5F0E8;
-  --text-heading: #FFFFFF;
-  --text-body: #F5F0E8;
-  --text-muted: #D4C8B0;
-  --text-dark: #FFFFFF;
+  /* Text — warm cream */
+  --text: #EFE4CF;
+  --text-heading: #FAF3E3;
+  --text-body: #E4D6BB;
+  --text-muted: #B0A184;
 
-  /* Accent Colors - Bright cream for visibility */
-  --accent: #F5F0E8;
-  --accent-primary: #F5F0E8;
-  --accent-secondary: #E6DDC6;
-  --white: #1A1410;
+  /* Accent — warm honey-caramel, lighter for dark bg */
+  --accent: #D9A05B;
+  --accent-strong: #EAB57A;
+  --accent-soft: rgba(217, 160, 91, 0.14);
+  --accent-ink: #F3D9B4;
 
-  /* Button Colors */
-  --btn-primary-bg: #F5F0E8;
-  --btn-primary-hover: #FFFFFF;
-  --btn-primary-text: #1A1410;
+  --white: #191410;
+  --ink: #FAF3E3;
 
-  /* Your Brand Colors - adjusted for dark mode */
-  --color-cream: #2D2822;
-  --color-beige: #3D3630;
-  --color-tan: #C2B8A3;
-  --color-brown: #A19882;
+  /* Button */
+  --btn-primary-bg: #D9A05B;
+  --btn-primary-hover: #EAB57A;
+  --btn-primary-text: #211508;
 
-  /* Borders - more visible */
-  --border: #6B5540;
-  --border-light: #4D4035;
+  /* Brand tones */
+  --color-cream: #211B14;
+  --color-beige: #2A2218;
+  --color-tan: #A3946F;
+  --color-brown: #8A7A62;
 
-  /* Shadows */
-  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
-  --shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
-  --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.5);
-  --shadow-hover: 0 8px 24px rgba(245, 240, 232, 0.2);
+  /* Borders */
+  --border: #4A3C2A;
+  --border-light: #372E20;
+  --border-strong: #8A7A62;
 
-  /* Navbar */
-  --navbar-bg: rgba(31, 26, 23, 0.98);
-  --navbar-border: #4D4035;
+  /* Shadows — tinted warm black */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.35), 0 2px 8px rgba(0, 0, 0, 0.4);
+  --shadow: 0 2px 6px rgba(0, 0, 0, 0.4), 0 12px 28px rgba(0, 0, 0, 0.5);
+  --shadow-lg: 0 8px 20px rgba(0, 0, 0, 0.5), 0 24px 48px rgba(0, 0, 0, 0.6);
+  --shadow-hover: 0 10px 24px rgba(217, 160, 91, 0.14), 0 28px 56px rgba(0, 0, 0, 0.6);
 
-  /* Footer */
-  --footer-bg: #141210;
-  --footer-text: #FFFFFF;
-  --footer-muted: #D4C8B0;
+  --navbar-bg: rgba(25, 20, 16, 0.82);
+  --navbar-border: rgba(74, 60, 42, 0.6);
+
+  --footer-bg: #120E0A;
+  --footer-text: #EFE4CF;
+  --footer-muted: #9C8C70;
 }
 
-/* Smooth transition for theme changes */
-* {
+/* Numbers / data alignment */
+.statValue,
+.experienceNumber,
+.price,
+.featureNumber {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Prevent global background/color transition jank on load; scope it */
+html[data-theme] body * {
   transition: background-color var(--transition),
               border-color var(--transition),
               color var(--transition),
