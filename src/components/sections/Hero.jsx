@@ -1,4 +1,3 @@
-import { companyInfo } from '../../data/products';
 import styles from './Hero.module.css';
 
 function Hero() {
@@ -31,15 +30,6 @@ function Hero() {
               Place an order
             </a>
           </div>
-
-          <ul className={styles.stats}>
-            {companyInfo.stats.slice(0, 3).map((stat, i) => (
-              <li key={i} className={styles.stat}>
-                <span className={styles.statValue}>{stat.value}</span>
-                <span className={styles.statLabel}>{stat.label}</span>
-              </li>
-            ))}
-          </ul>
         </div>
 
         <div className={styles.media}>

@@ -162,8 +162,6 @@
 }
 
 /* Numbers / data alignment */
-.statValue,
-.experienceNumber,
 .price,
 .featureNumber {
   font-variant-numeric: tabular-nums;

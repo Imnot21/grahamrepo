@@ -1,9 +1,9 @@
 export const products = [
   {
     id: 1,
-    name: "Classic Graham Balls",
-    description: "Our signature graham balls made with premium crushed graham crackers and sweetened condensed milk, rolled in more graham crumbs.",
-    price: 25,
+    name: "Plain Graham Balls",
+    description: "Our signature plain graham balls made with premium crushed graham crackers and sweetened condensed milk, rolled in more graham crumbs.",
+    price: 100,
     unit: "pack of 12",
     image: "/grahamrepo/images/classic-graham-balls.png",
     badge: "Best Seller",
@@ -11,30 +11,30 @@ export const products = [
   },
   {
     id: 2,
-    name: "Chocolate Coated Graham Balls",
-    description: "Classic graham balls dipped in rich chocolate coating. A perfect blend of creamy and crunchy textures.",
-    price: 35,
-    unit: "pack of 12",
-    image: "/grahamrepo/images/chocolate-graham-balls.png",
-    badge: "Popular",
-    features: ["Belgian chocolate", "Double-coated", "Gift-ready"]
-  },
-  {
-    id: 3,
     name: "Sprinkles Graham Balls",
-    description: "Colorful and fun graham balls rolled in rainbow sprinkles. Perfect for parties and celebrations.",
-    price: 30,
-    unit: "pack of 12",
+    description: "Colorful and fun plain graham balls rolled in rainbow sprinkles. Perfect for parties and celebrations.",
+    price: 110,
+    unit: "pack of 10",
     image: "/grahamrepo/images/sprinkles-graham-balls.png",
     badge: null,
     features: ["Colorful design", "Party favorite", "Kid-approved"]
   },
   {
+    id: 3,
+    name: "Ube Graham Balls",
+    description: "Creamy ube-flavored graham balls with a rich purple yam taste, rolled in sweetened condensed milk and crushed graham crumbs.",
+    price: 100,
+    unit: "pack of 10",
+    image: "/grahamrepo/images/ube.png",
+    badge: "Popular",
+    features: ["Premium ube", "Fresh daily", "Kid-approved"]
+  },
+  {
     id: 4,
     name: "Premium Assorted Graham Balls",
-    description: "A deluxe assortment featuring classic, chocolate, and special flavors in one beautiful package.",
-    price: 45,
-    unit: "pack of 18",
+    description: "A deluxe assorted featuring plain, sprinkles, and ube flavors in one beautiful package.",
+    price: 120,
+    unit: "pack of 10",
     image: "/grahamrepo/images/classic-graham-balls.png",
     badge: "Premium",
     features: ["Multiple flavors", "Gift packaging", "Great value"]
@@ -67,24 +67,21 @@ export const testimonials = [
     name: "Maria Santos",
     role: "Event Organizer",
     content: "The graham balls were a hit at our company event! Everyone loved the chocolate-coated ones. Will definitely order again.",
-    rating: 5,
-    image: "/images/testimonial-1.jpg"
+    rating: 5
   },
   {
     id: 2,
     name: "Carlos Reyes",
     role: "Restaurant Owner",
     content: "As a business partner, I'm impressed with the consistency and quality. Our customers keep coming back for more.",
-    rating: 5,
-    image: "/images/testimonial-2.jpg"
+    rating: 5
   },
   {
     id: 3,
     name: "Ana Dela Cruz",
     role: "Happy Customer",
     content: "Best graham balls I've ever tasted! The sprinkles variant is my kids' favorite. Perfect for birthday parties.",
-    rating: 5,
-    image: "/images/testimonial-3.jpg"
+    rating: 5
   }
 ];
 
@@ -93,12 +90,12 @@ export const companyInfo = {
   tagline: "Premium Graham Balls for Every Occasion",
   description: "We are a dedicated supplier of premium quality graham balls, serving satisfied customers since 2018. Our products are made fresh daily using only the finest ingredients.",
   phone: "+63 912 345 6789",
-  email: "orders@grahamballsdelights.com",
-  address: "123 Food Street, Makati City, Philippines",
+  email: "mitchmarione19@gmail.com",
+  address: "123 Food Street, Sta. Cruz Laguna, Philippines",
   hours: "Mon-Sat: 8:00 AM - 6:00 PM",
   social: {
-    facebook: "https://facebook.com/grahamballsdelights",
-    instagram: "https://instagram.com/grahamballsdelights",
+    facebook: "https://www.facebook.com/mitchmarione19",
+    instagram: "https://instagram.com/mitchmarione19",
     whatsapp: "https://wa.me/639123456789"
   },
   stats: [

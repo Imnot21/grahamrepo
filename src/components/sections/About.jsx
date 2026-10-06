@@ -51,10 +51,6 @@ function About() {
                 />
               ))}
             </div>
-            <div className={styles.experience}>
-              <span className={styles.experienceNumber}>8+</span>
-              <span className={styles.experienceText}>Years of Excellence</span>
-            </div>
           </div>
         </div>
 
@@ -123,15 +119,6 @@ function About() {
                 <p>Proudly serving our local community and supporting local events</p>
               </div>
             </div>
-          </div>
-
-          <div className={styles.stats}>
-            {companyInfo.stats.map((stat, index) => (
-              <div key={index} className={styles.stat}>
-                <span className={styles.statValue}>{stat.value}</span>
-                <span className={styles.statLabel}>{stat.label}</span>
-              </div>
-            ))}
           </div>
 
           <a href="#contact" className={styles.ctaButton}>
