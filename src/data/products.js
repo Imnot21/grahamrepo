@@ -41,16 +41,6 @@ export const products = [
   },
   {
     id: 5,
-    name: "Party Pack Graham Balls",
-    description: "Large pack perfect for parties and events. Comes in a keepsake box with serving suggestions.",
-    price: 75,
-    unit: "pack of 36",
-    image: "/grahamrepo/images/sprinkles-graham-balls.png",
-    badge: "Party Size",
-    features: ["Bulk savings", "Party-ready", "Keepsake box"]
-  },
-  {
-    id: 6,
     name: "Wholesale Bulk Graham Balls",
     description: "For resellers and businesses. Contact us for custom pricing and packaging options.",
     price: 0,
@@ -58,30 +48,6 @@ export const products = [
     image: "/grahamrepo/images/chocolate-graham-balls.png",
     badge: "Wholesale",
     features: ["Custom quantities", "Special pricing", "Business partnership"]
-  }
-];
-
-export const testimonials = [
-  {
-    id: 1,
-    name: "Maria Santos",
-    role: "Event Organizer",
-    content: "The graham balls were a hit at our company event! Everyone loved the chocolate-coated ones. Will definitely order again.",
-    rating: 5
-  },
-  {
-    id: 2,
-    name: "Carlos Reyes",
-    role: "Restaurant Owner",
-    content: "As a business partner, I'm impressed with the consistency and quality. Our customers keep coming back for more.",
-    rating: 5
-  },
-  {
-    id: 3,
-    name: "Ana Dela Cruz",
-    role: "Happy Customer",
-    content: "Best graham balls I've ever tasted! The sprinkles variant is my kids' favorite. Perfect for birthday parties.",
-    rating: 5
   }
 ];
 
@@ -102,6 +68,6 @@ export const companyInfo = {
     { label: "Years of Experience", value: "4+" },
     { label: "Happy Customers", value: "5000+" },
     { label: "Products Sold", value: "50,000+" },
-    { label: "Product Varieties", value: "6+" }
+    { label: "Product Varieties", value: "5+" }
   ]
 };

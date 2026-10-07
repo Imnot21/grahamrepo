@@ -41,7 +41,6 @@ function Footer() {
               <li><a href="#home">Home</a></li>
               <li><a href="#products">Products</a></li>
               <li><a href="#about">Our story</a></li>
-              <li><a href="#testimonials">Reviews</a></li>
               <li><a href="#contact">Contact</a></li>
             </ul>
           </nav>

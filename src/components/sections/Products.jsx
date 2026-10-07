@@ -9,7 +9,7 @@ function Products() {
       <div className={styles.container}>
         <div className={styles.header}>
           <span className="eyebrow">Our products</span>
-          <h2 className={styles.title}>Six ways to make the day sweeter</h2>
+          <h2 className={styles.title}>Five ways to make the day sweeter</h2>
           <p className={styles.subtitle}>
             Handcrafted with premium ingredients and rolled fresh to order. Pick a flavor, or
             talk to us about custom and wholesale packs for your occasion.
