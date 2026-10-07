@@ -6,7 +6,7 @@ function Hero() {
       <div className={styles.ornament} aria-hidden="true" />
       <div className={styles.container}>
         <div className={styles.content}>
-          <span className="eyebrow">Premium quality since 2018</span>
+          <span className="eyebrow">Premium quality since 2022</span>
 
           <h1 className={styles.title}>
             Little bites of
@@ -47,7 +47,7 @@ function Hero() {
               <circle cx="50" cy="50" r="47" fill="none" stroke="currentColor" strokeWidth="1.5" strokeDasharray="4 5" />
               <path id="circ" d="M50,50 m-36,0 a36,36 0 1,1 72,0 a36,36 0 1,1 -72,0" fill="none" />
               <text className={styles.stampText}>
-                <textPath href="#circ">FRESH DAILY &nbsp;SINCE 2018 &nbsp;</textPath>
+                <textPath href="#circ">FRESH DAILY &nbsp;SINCE 2022 &nbsp;</textPath>
               </text>
             </svg>
           </div>

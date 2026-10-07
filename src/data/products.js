@@ -88,7 +88,7 @@ export const testimonials = [
 export const companyInfo = {
   name: "Graham Balls Delights",
   tagline: "Premium Graham Balls for Every Occasion",
-  description: "We are a dedicated supplier of premium quality graham balls, serving satisfied customers since 2018. Our products are made fresh daily using only the finest ingredients.",
+  description: "We are a dedicated supplier of premium quality graham balls, serving satisfied customers since 2022. Our products are made fresh daily using only the finest ingredients.",
   phone: "+63 912 345 6789",
   email: "mitchmarione19@gmail.com",
   address: "123 Food Street, Sta. Cruz Laguna, Philippines",
@@ -99,7 +99,7 @@ export const companyInfo = {
     whatsapp: "https://wa.me/639123456789"
   },
   stats: [
-    { label: "Years of Experience", value: "8+" },
+    { label: "Years of Experience", value: "4+" },
     { label: "Happy Customers", value: "5000+" },
     { label: "Products Sold", value: "50,000+" },
     { label: "Product Varieties", value: "6+" }

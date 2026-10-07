@@ -56,7 +56,7 @@ function About() {
 
         <div className={styles.content}>
           <span className="eyebrow">Our story</span>
-          <h2 className={styles.title}>Sweet moments, crafted since 2018</h2>
+          <h2 className={styles.title}>Sweet moments, crafted since 2022</h2>
           <p className={styles.description}>
             {companyInfo.description}
           </p>
