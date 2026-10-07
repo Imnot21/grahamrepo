@@ -35,7 +35,7 @@ function Hero() {
         <div className={styles.media}>
           <figure className={styles.frame}>
             <img
-              src="/grahamrepo/images/classic-graham-balls.png"
+              src="/images/classic-graham-balls.png"
               alt="Classic graham balls, dusted with graham crumbs"
               className={styles.heroImage}
               loading="eager"

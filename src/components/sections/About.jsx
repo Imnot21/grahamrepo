@@ -3,9 +3,9 @@ import { companyInfo } from '../../data/products';
 import styles from './About.module.css';
 
 const carouselImages = [
-  { src: '/grahamrepo/images/classic-graham-balls.png', alt: 'Classic Graham Balls' },
-  { src: '/grahamrepo/images/chocolate-graham-balls.png', alt: 'Chocolate Coated Graham Balls' },
-  { src: '/grahamrepo/images/sprinkles-graham-balls.png', alt: 'Sprinkles Graham Balls' },
+  { src: '/images/classic-graham-balls.png', alt: 'Classic Graham Balls' },
+  { src: '/images/chocolate-graham-balls.png', alt: 'Chocolate Coated Graham Balls' },
+  { src: '/images/sprinkles-graham-balls.png', alt: 'Sprinkles Graham Balls' },
 ];
 
 function About() {

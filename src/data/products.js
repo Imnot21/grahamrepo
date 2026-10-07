@@ -5,7 +5,7 @@ export const products = [
     description: "Our signature plain graham balls made with premium crushed graham crackers and sweetened condensed milk, rolled in more graham crumbs.",
     price: 100,
     unit: "pack of 12",
-    image: "/grahamrepo/images/classic-graham-balls.png",
+    image: "/images/classic-graham-balls.png",
     badge: "Best Seller",
     features: ["Premium ingredients", "Fresh daily", "Perfect sweetness"]
   },
@@ -15,7 +15,7 @@ export const products = [
     description: "Colorful and fun plain graham balls rolled in rainbow sprinkles. Perfect for parties and celebrations.",
     price: 110,
     unit: "pack of 10",
-    image: "/grahamrepo/images/sprinkles-graham-balls.png",
+    image: "/images/sprinkles-graham-balls.png",
     badge: null,
     features: ["Colorful design", "Party favorite", "Kid-approved"]
   },
@@ -25,7 +25,7 @@ export const products = [
     description: "Creamy ube-flavored graham balls with a rich purple yam taste, rolled in sweetened condensed milk and crushed graham crumbs.",
     price: 100,
     unit: "pack of 10",
-    image: "/grahamrepo/images/ube.png",
+    image: "/images/ube.png",
     badge: "Popular",
     features: ["Premium ube", "Fresh daily", "Kid-approved"]
   },
@@ -35,7 +35,7 @@ export const products = [
     description: "A deluxe assorted featuring plain, sprinkles, and ube flavors in one beautiful package.",
     price: 120,
     unit: "pack of 10",
-    image: "/grahamrepo/images/classic-graham-balls.png",
+    image: "/images/classic-graham-balls.png",
     badge: "Premium",
     features: ["Multiple flavors", "Gift packaging", "Great value"]
   },
@@ -45,7 +45,7 @@ export const products = [
     description: "For resellers and businesses. Contact us for custom pricing and packaging options.",
     price: 0,
     unit: "custom orders",
-    image: "/grahamrepo/images/chocolate-graham-balls.png",
+    image: "/images/chocolate-graham-balls.png",
     badge: "Wholesale",
     features: ["Custom quantities", "Special pricing", "Business partnership"]
   }
